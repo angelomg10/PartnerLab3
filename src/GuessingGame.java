@@ -7,6 +7,7 @@ import java.util.Scanner;
  * Generates a random number between 1 and 100 and allows the user to guess it within 5 tries.
  *
  * Author: Guillermo Angel
+ * Author: Marcelo Cruz
  * Date: 3/21/2025
  */
 public class GuessingGame {
@@ -17,6 +18,7 @@ public class GuessingGame {
         Scanner input = new Scanner(System.in);
 
         //call the loop
+
         do {
             System.out.println("type exit to stop, type 1 for rock paper scissors, type 2 to play guessing game");
             usersChoice = input.nextLine();
@@ -36,6 +38,8 @@ public class GuessingGame {
 //        System.out.println("Thanks for playing!");
 //        scanner.close();
     }
+
+    //Gulliermo work
 
     private static void playGame(Scanner scanner) {
         int target = new Random().nextInt(100) + 1, attempts = 5;
@@ -57,6 +61,8 @@ public class GuessingGame {
         System.out.print("Play again? (Y/N): ");
         return scanner.next().trim().equalsIgnoreCase("Y");
     }
+
+    //Marcelo Cruz work
 
     public static void rpsGame(){
 
